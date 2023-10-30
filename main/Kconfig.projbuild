@@ -1,0 +1,15 @@
+menu "Camera with IR Sensor - Firmware Configuration"
+
+    config BROKER_URL
+        string "Broker URL"
+        default "mqtt://mqtt.eclipseprojects.io"
+        help
+            URL of the broker to connect to.  If running a local MQTT service on a Pi or the like you could just use the IP of that system after the protocol such as: mqtt://192.168.0.10
+
+    config CAM_NAME
+        string "Camera Name"
+        default "default-cam"
+        help
+            Name of the camera used in MQTT messages along with IP so server side can log activity from IR sensor and use the name whnen storing captured images during times of activity.
+        
+endmenu
