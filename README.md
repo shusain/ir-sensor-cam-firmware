@@ -1,4 +1,4 @@
-# Garden control
+# IR Sensor and Cam Firmware
 > Based on example MQTT app from esp-idf framework
 
 ## Prerequisite
